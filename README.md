@@ -33,6 +33,12 @@ Coming Soon!
 1. Add this package to your project:
    - `yarn add PACKAGE_NAME`
 
+Just trying things out or want to skip the build step? Use the unpkg URL:
+
+```
+<script src="https://unpkg.com/PACKAGE_NAME/dist/index.production.js"></script>
+```
+
 ## Highlights
 
 Coming Soon!

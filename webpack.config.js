@@ -8,16 +8,29 @@ module.exports = {
   output: {
     // eslint-disable-next-line no-undef
     path: resolve(__dirname, "dist"),
+    filename: "index.production.js",
+    library: {
+      name: "react-itertools",
+      type: "umd",
+    },
   },
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.tsx?$/,
         use: "babel-loader",
       },
     ],
   },
   resolve: {
-    extensions: [".ts", ".js"],
+    extensions: [".ts", ".tsx", ".js"],
+  },
+  externals: {
+    react: {
+      commonjs: "react",
+      commonjs2: "react",
+      amd: "react",
+      root: "react",
+    },
   },
 };
