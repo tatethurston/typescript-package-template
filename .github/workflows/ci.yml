@@ -18,4 +18,8 @@ jobs:
       - run: yarn lint
       - run: yarn test:ci && yarn codecov --token=$CODECOV_TOKEN
         env:
+          # 1. Get here:
+          # https://app.codecov.io/gh/tatethurston/PACKAGE_NAME/settings
+          # 2. Upload here:
+          # https://github.com/tatethurston/PACKAGE_NAME/settings/secrets/actions/new
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

@@ -7,3 +7,6 @@ perl -pi -e 's/PACKAGE_DESCRIPTION/REPLACE_ME/g' $(find . -maxdepth 1 -type f)
 rm ./setup
 
 git init
+git remote add origin git@github.com:tatethurston/$REPLACE_ME.git
+git branch -M main
+git push -u origin main

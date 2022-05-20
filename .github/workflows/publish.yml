@@ -16,4 +16,8 @@ jobs:
       - run: yarn package:build
       - run: cd dist && npm publish
         env:
+          # 1. Generate a new `automation` token here:
+          # https://www.npmjs.com/settings/tatethurston/tokens
+          # 2. Upload here:
+          # https://github.com/tatethurston/PACKAGE_NAME/settings/secrets/actions/new
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
