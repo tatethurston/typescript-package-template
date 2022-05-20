@@ -18,4 +18,4 @@ For more guidance, check out [thoughtbot's code of conduct](https://thoughtbot.c
 
 ## Licensing 📃
 
-See the project's [MIT License](https://github.com/tatethurston/PACKAGE_NAME/blob/master/LICENSE).
+See the project's [MIT License](https://github.com/tatethurston/PACKAGE_NAME/blob/main/LICENSE).

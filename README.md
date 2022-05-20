@@ -7,7 +7,7 @@
 <a href="https://www.npmjs.com/package/PACKAGE_NAME">
   <img src="https://img.shields.io/npm/v/PACKAGE_NAME.svg">
 </a>
-<a href="https://github.com/tatethurston/PACKAGE_NAME/blob/master/LICENSE">
+<a href="https://github.com/tatethurston/PACKAGE_NAME/blob/main/LICENSE">
   <img src="https://img.shields.io/npm/l/PACKAGE_NAME.svg">
 </a>
 <a href="https://bundlephobia.com/result?p=PACKAGE_NAME">
@@ -42,8 +42,8 @@ Coming Soon!
 
 ## Contributing 👫
 
-PR's and issues welcomed! For more guidance check out [CONTRIBUTING.md](https://github.com/tatethurston/PACKAGE_NAME/blob/master/CONTRIBUTING.md)
+PR's and issues welcomed! For more guidance check out [CONTRIBUTING.md](https://github.com/tatethurston/PACKAGE_NAME/blob/main/CONTRIBUTING.md)
 
 ## Licensing 📃
 
-See the project's [MIT License](https://github.com/tatethurston/PACKAGE_NAME/blob/master/LICENSE).
+See the project's [MIT License](https://github.com/tatethurston/PACKAGE_NAME/blob/main/LICENSE).
