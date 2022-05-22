@@ -1,12 +1,17 @@
 #!/bin/bash
+rm -rf ./.git
 
-perl -pi -e 's/PACKAGE_NAME/$REPLACE_ME/g' $(find . -maxdepth 1 -type f)
-perl -pi -e 's/PACKAGE_DISPLAY_NAME/REPLACE_ME/g' $(find . -maxdepth 1 -type f)
-perl -pi -e 's/PACKAGE_DESCRIPTION/REPLACE_ME/g' $(find . -maxdepth 1 -type f)
+PACKAGE_NAME="REPLACE_ME"
+DISPLAY_NAME="REPLACE_ME"
+DESCRIPTION="REPLACE_ME"
+
+perl -pi -e "s/PACKAGE_NAME/$PACKAGE_NAME/g" $(find . -type f)
+perl -pi -e "s/PACKAGE_DISPLAY_NAME/$DISPLAY_NAME/g" $(find . -type f)
+perl -pi -e "s/PACKAGE_DESCRIPTION/$DESCRIPTION/g" $(find . -type f)
 
 rm ./setup
 
 git init
-git remote add origin git@github.com:tatethurston/$REPLACE_ME.git
+git remote add origin git@github.com:tatethurston/$PACKAGE_NAME.git
 git branch -M main
 git push -u origin main
