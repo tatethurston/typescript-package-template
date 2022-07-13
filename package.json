@@ -8,9 +8,9 @@
     "type": "git",
     "url": "https://github.com/tatethurston/PACKAGE_NAME"
   },
+  "type": "module",
   "scripts": {
-    "build:commonjs": "tsc --module commonjs --outDir dist/cjs",
-    "build:module": "tsc",
+    "build:commonjs": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.cjs",
     "clean": "rm -rf dist",
     "lint": "npm run typecheck && prettier --check . && prettier-package-json --list-different '{,example/,}package.json' && eslint .",
     "lint:fix": "prettier --write . && prettier-package-json --write '{,example/}package.json' && eslint --fix .",
@@ -31,6 +31,7 @@
     "@typescript-eslint/parser": "^5.29.0",
     "babel-loader": "^8.2.5",
     "codecov": "^3.8.3",
+    "esbuild": "^0.14.49",
     "eslint": "^8.18.0",
     "eslint-config-prettier": "^8.1.0",
     "husky": "^8.0.1",
