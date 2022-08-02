@@ -11,6 +11,7 @@
   "type": "module",
   "scripts": {
     "build:commonjs": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.cjs",
+    "build:module": "tsc",
     "clean": "rm -rf dist",
     "lint": "npm run typecheck && prettier --check . && prettier-package-json --list-different '{,example/,}package.json' && eslint .",
     "lint:fix": "prettier --write . && prettier-package-json --write '{,example/}package.json' && eslint --fix .",
