@@ -34,7 +34,7 @@ Coming Soon!
 ## Installation & Usage 📦
 
 1. Add this package to your project:
-   - `npm install PACKAGE_NAME` or `yarn add PACKAGE_NAME`
+   - `npm install PACKAGE_NAME`
 
 ## Highlights
 
