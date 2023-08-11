@@ -8,6 +8,14 @@
     "type": "git",
     "url": "https://github.com/tatethurston/PACKAGE_NAME"
   },
+  "scripts": {
+    "build:commonjs": "true",
+    "build:module": "tsc",
+    "clean": "rm -rf dist",
+    "package:build": "pnpm run clean && pnpm run build:commonjs && pnpm run build:module && pnpm run package:prune",
+    "package:prune": "find dist -name *test* -delete",
+    "typecheck": "tsc --noEmit"
+  },
   "type": "module",
   "sideEffects": false,
   "types": "index.d.ts",
