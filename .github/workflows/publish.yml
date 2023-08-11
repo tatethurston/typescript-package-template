@@ -14,8 +14,8 @@ jobs:
           cache: "pnpm"
           registry-url: "https://registry.npmjs.org"
       - run: pnpm install --frozen-lockfile
-      - run: pnpm package:build
-      - run: cd dist && npm publish
+      - run: cp README.md LICENSE CHANGELOG.md packages/package
+      - run: cd packages/package && pnpm package:build && npm publish
         env:
           # 1. Generate a new `automation` token here:
           # https://www.npmjs.com/settings/tatethurston/tokens

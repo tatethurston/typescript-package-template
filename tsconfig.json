@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "module": "NodeNext",
     "noEmitOnError": false,
     "outDir": "dist",
     "resolveJsonModule": true,
@@ -14,7 +15,6 @@
     "sourceMap": false,
     "strict": true,
     "declaration": true,
-    "target": "ESNext"
-  },
-  "include": ["src/**/*"]
+    "target": "ES2020"
+  }
 }
