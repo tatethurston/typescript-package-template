@@ -20,10 +20,4 @@ jobs:
       # run again to link bin that is now available after package:build
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
-      - run: pnpm test:ci && pnpm codecov --token=$CODECOV_TOKEN
-        env:
-          # 1. Get here:
-          # https://app.codecov.io/gh/tatethurston/PACKAGE_NAME/settings
-          # 2. Upload here:
-          # https://github.com/tatethurston/PACKAGE_NAME/settings/secrets/actions/new
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - run: pnpm test:ci && pnpm codecov
